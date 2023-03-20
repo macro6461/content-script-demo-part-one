@@ -1,0 +1,19 @@
+{
+    "name": "Content Script Demo Part One",
+    "description": "How to use a basic content script in a chrome extension.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": ["https://medium.com/me/stats"],
+          "runAt": "document_end",
+          "js": ["content.js"]
+        }
+      ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action":{
+        "default_title": "Content Script Demo Part One"
+    }
+}
